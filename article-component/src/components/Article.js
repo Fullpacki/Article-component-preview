@@ -35,7 +35,7 @@ function Article() {
         {/* Displayer */}
         <div
           className={`flex flex-row items-center justify-between transition-all ease-in-out duration-300 mt-5 ${
-            isActive ? "translate-x-[150%] xl:translate-x-0" : ""
+            isActive ? "translate-x-[0%] xl:translate-x-0" : ""
           }`}
         >
           <div className="flex flex-row gap-4 items-center">
@@ -53,7 +53,7 @@ function Article() {
         {/* Share buttons */}
         <div
           className={`bg-gray-700 flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300 translate-x-[150%] absolute w-full bottom-0 left-0 xl:hidden ${
-            isActive ? "translate-x-[0%]" : ""
+            isActive ? "translate-x-[0%]" : "hidden"
           }`}
         >
           <div className="flex flex-row items-center gap-4">
@@ -70,7 +70,7 @@ function Article() {
         {/* Share buttons Desktop */}
         <div className="hidden xl:flex">
           <div
-            className={`"px-6 py-3 w-1/3 flex flex-row items-center justify-around rounded-xl bg-gray-700 absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
+            className={`"px-6 py-3 w-1/3 flex flex-row justify-center gap-5 items-center rounded-xl bg-gray-700 absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
             ${isActive ? "" : "opacity-0"}`}
           >
             <p className="tracking-[0.3em] text-gray-400">SHARE</p>
