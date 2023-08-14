@@ -50,7 +50,7 @@ function Article() {
           </div>
         </div>
         <div
-          className={`bg-gray-700 flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300  absolute w-full bottom-0 left-0 xl:hidden ${
+          className={`bg-[#48576c] flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300  absolute w-full bottom-0 left-0 xl:hidden ${
             isActive ? "translate-x-[150%]" : "translate-x-[0%]"
           }`}
         >
@@ -66,7 +66,7 @@ function Article() {
         </div>
         <div className="hidden xl:flex">
           <div
-            className={`"px-6 py-3 w-1/3 flex flex-row justify-center gap-5 items-center rounded-xl bg-gray-700 absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
+            className={`"px-6 py-3 w-1/3 flex flex-row justify-center gap-5 items-center rounded-xl bg-[#48576c] absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
             ${isActive ? "" : "opacity-0"}`}
           >
             <p className="tracking-[0.3em] text-gray-400">SHARE</p>
