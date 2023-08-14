@@ -16,7 +16,7 @@ function Article() {
   return (
     <div className="flex flex-col rounded-xl bg-white shadow-xl max-w-sm overflow-hidden relative xl:flex-row xl:max-w-3xl xl:overflow-visible">
       <img
-        className="rounded-t-xl xl:rounded-none xl:rounded-l-xl xl:w-1/3 object-cover"
+        className="rounded-t-xl xl:rounded-none xl:rounded-l-xl xl:w-1/2 object-cover"
         src={ImgDrawers}
         alt=""
       />
@@ -42,13 +42,16 @@ function Article() {
               <p className="text-gray-400">28 Jun 2020</p>
             </div>
           </div>
-          <div onClick={handleClick} className="p-2 rounded-full bg-gray-100">
+          <div
+            onClick={handleClick}
+            className="p-2 rounded-full cursor-pointer bg-gray-100"
+          >
             <img src={IconShare} alt="" />
           </div>
         </div>
         <div
-          className={`bg-gray-700 flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300 translate-x-[150%] absolute w-full bottom-0 left-0 xl:hidden ${
-            isActive ? "translate-x-[0%]" : ""
+          className={`bg-gray-700 flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300  absolute w-full bottom-0 left-0 xl:hidden ${
+            isActive ? "translate-x-[150%]" : "translate-x-[0%]"
           }`}
         >
           <div className="flex flex-row items-center gap-4">
