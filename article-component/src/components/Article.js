@@ -71,7 +71,7 @@ function Article() {
         <div className="hidden xl:flex">
           <div
             className={`"px-6 py-3 w-1/3 flex flex-row items-center justify-around rounded-xl bg-gray-700 absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
-            ${isActive ? "opacity-0" : ""}`}
+            ${isActive ? "" : "opacity-0"}`}
           >
             <p className="tracking-[0.3em] text-gray-400">SHARE</p>
             <img className="cursor-pointer" src={IconFacebook} alt="" />
