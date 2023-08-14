@@ -21,7 +21,6 @@ function Article() {
         alt=""
       />
       <div className="pt-10 pb-5 px-10 flex flex-col gap-5 xl:w-full">
-        {/* Main Content */}
         <h1 className="text-xl font-semibold text-gray-700">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
@@ -31,8 +30,6 @@ function Article() {
           felt slightly bare and ininviting. I've got some simple tips to help
           you make any room feel complete.
         </h2>
-        {/* Main Content */}
-        {/* Displayer */}
         <div
           className={`flex flex-row items-center justify-between transition-all ease-in-out duration-300 mt-5 ${
             isActive ? "translate-x-[0%] xl:translate-x-0" : ""
@@ -49,11 +46,9 @@ function Article() {
             <img src={IconShare} alt="" />
           </div>
         </div>
-        {/* Displayer */}
-        {/* Share buttons */}
         <div
           className={`bg-gray-700 flex-row justify-around flex px-2 py-7 rounded-b-xl transition-all ease-in-out duration-300 translate-x-[150%] absolute w-full bottom-0 left-0 xl:hidden ${
-            isActive ? "translate-x-[0%]" : "hidden"
+            isActive ? "translate-x-[0%]" : ""
           }`}
         >
           <div className="flex flex-row items-center gap-4">
@@ -66,8 +61,6 @@ function Article() {
             <img src={IconShare} alt="" />
           </div>
         </div>
-        {/* Share buttons */}
-        {/* Share buttons Desktop */}
         <div className="hidden xl:flex">
           <div
             className={`"px-6 py-3 w-1/3 flex flex-row justify-center gap-5 items-center rounded-xl bg-gray-700 absolute bottom-[6em] -right-[4.5em] transition-all ease-in-out duration-500"
@@ -79,7 +72,6 @@ function Article() {
             <img className="cursor-pointer" src={IconPinterest} alt="" />
           </div>
         </div>
-        {/* Share buttons Desktop */}
       </div>
     </div>
   );
